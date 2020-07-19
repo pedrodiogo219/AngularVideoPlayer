@@ -1,11 +1,13 @@
 <div class="container">
     <div class="row">
-        <app-history class="col-md-5" (bookmarkEvent)="receiveBookmark($event)" (playVideoEvent)="receivePlayVideo($event)"></app-history>
-        <app-search-bar class="col-md-7" (urlEvent)="receiveUrl($event)" ></app-search-bar>
-    </div>
-    <div class="row" id="videoRow">
-        <app-bookmarks class="col-md-5" (playVideoEvent)="receivePlayVideo($event)"></app-bookmarks>
-        <app-video-view class="col-md-7" [url]="url"></app-video-view>
+        <div class="col-md-5">
+            <app-history (bookmarkEvent)="receiveBookmark($event)" (playVideoEvent)="receivePlayVideo($event)"></app-history>
+            <app-bookmarks (playVideoEvent)="receivePlayVideo($event)"></app-bookmarks>
+        </div>
+        <div class="col-md-7">
+            <app-search-bar (urlEvent)="receiveUrl($event)" ></app-search-bar>
+            <app-video-view [url]="url"></app-video-view>
+        </div>
     </div>
 </div>
 

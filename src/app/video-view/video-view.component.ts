@@ -22,7 +22,7 @@ export class VideoViewComponent implements OnInit {
     this.url = newUrl
     this.yt_iframe_html = this.embedService.embed(this.url, {
       // query: { portrait: 0, color: '333' },
-      attr: { width: "100%", height:"100%"}
+      attr: { width: "100%","height":"360px" }
     });
   }
 }
