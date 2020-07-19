@@ -1,0 +1,11 @@
+.container app-search-bar{
+    padding: 0;
+    display: inline-block;
+}
+.container app-history{
+    display: inline-block;
+}
+#videoRow{
+    min-height: 400px;
+}
+

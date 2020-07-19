@@ -1,0 +1,9 @@
+<form #urlForm="ngForm" (submit)="urlSubmit(urlForm.value); urlForm.resetForm()" >  
+    <div class="form-group">  
+        <h1 class="text-center ">Watch video</h1>   
+        <div class="input-group-prepend">       
+            <input type="text" #url class="form-control" placeholder="video url" name="url" ngModel>    
+            <span class="input-group-text" (click)="urlSubmit(urlForm.value); urlForm.resetForm()"> <i class="material-icons">send</i> </span>   
+        </div>
+    </div>
+</form>

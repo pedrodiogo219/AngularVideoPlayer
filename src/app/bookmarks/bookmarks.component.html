@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-center ">Favorites</h1>
+    <div class="data">  
+        <ul class="list-unstyled">   
+            <li *ngFor="let url of bookmarkArray" (click)="playVideo(url)"> {{url}} 
+                <div class="icons">
+                    <i (click)="deleteItem(url)" class="material-icons">delete</i>
+                </div>
+            </li>  
+        </ul> 
+    </div>
+</div>

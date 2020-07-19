@@ -1,0 +1,29 @@
+.container{
+    margin-top: 1em;
+    max-width: 40em;
+    margin: 4em auto; 
+    position: relative; 
+    background:#f4f4f4;
+    padding: 1em 1em;
+}.container h1{
+    font-family: "Raleway";
+    color:#F97300; 
+}.data ul{
+    list-style-type: none;
+    padding-left: 0;
+}.data li{ 
+    white-space: pre-line;
+    background: #fff;
+    border-left: 4px solid #F97300; 
+    padding: 1.5em; 
+    margin: 1em auto; 
+    color: #666; 
+    font-family: "Raleway";
+    cursor: pointer;
+}.data li i{
+    float: none; 
+    color: #888;    
+    cursor: pointer;
+}.container .icons{
+    float: right;
+}

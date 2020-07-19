@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularVideoPlayer"
+    }
+  },
+  "defaultProject": "angularVideoPlayer",
+  "cli": {
+    "analytics": "fca5db41-a4cf-41d6-81cd-bfd38bdc6ef7"
+  }
 }

@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="text-center ">History</h1>
+    <div class="data">  
+        <ul class="list-unstyled">   
+            <li *ngFor="let url of urlArray" (click)="playVideo(url)"> {{url}} 
+                <div class="icons">
+                    <i (click)="deleteItem(url)" class="material-icons">delete</i>
+                    <i (click)="bookmarkItem(url)" class="material-icons">star</i>
+                </div>
+            </li>  
+        </ul> 
+    </div>
+</div>
